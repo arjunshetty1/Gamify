@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <title>Gamify</title>
+</head>
+<body>
+<div class="container">
+
+<div class="navbar">
+    <img class="logo" src="logo.png" alt="logo">
+    <nav> <ul id="menuList">
+        <li><a href="">Game Controllers</a></li>
+        <li><a href="">VR Accessrories</a></li>
+        <li><a href="">Media Remotes</a></li>
+        <li><a href="">Others</a></li>
+    </ul></nav>
+    <img class="menu-icon" src="menu.png" alt="menu-icon" onclick="togglemenu()">
+</div>
+<div class="row">
+<div class="col-1">
+
+    <h2>PS$ V2 <br> DuaSHock</h2>
+    <h3>Wireless Controller For Playstaion</h3>
+    <p>(Compatible/Generic)</p>
+    <h4>$74.23</h4>
+    <button type="button">Buy Now <img src="arrow.png" alt=""></button>
+</div>
+<div class="col-2">
+
+    <img  class="controller" src="controller.png" alt="">
+    <div class="color-box"></div>
+    <div class="add-btn">
+        <img src="add.png" alt="">
+        <p><small>Add to cart</small></p>
+    </div>
+</div>
+
+</div>
+
+<div class="social-links">
+    <img src="fb.png" alt="">
+    <img src="tw.png" alt="">
+    <img src="ig.png" alt="">
+</div>
+
+
+</div>
+
+<script>
+
+    var menuList=document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu(){
+
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px"
+        }
+        else{
+            menuList.style.maxHeight = "0px"
+        }
+    }
+
+
+</script>
+</body>
+</html>
